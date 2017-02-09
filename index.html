@@ -1,0 +1,594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Wang Lili">
+    <meta name="generator" content="睿动团队">
+    <meta name="copyright" content="Copyright (c) 2012-2022 VA Team">
+    <link rel="stylesheet" type="text/css" href="css/base.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+	<script type="text/javascript" src="js/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="js/jquery.soChange-min.js"></script>
+	<title></title>
+	<!--[if lt IE 7]>
+        <script type="text/javascript" src="js/common/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script type="text/javascript">DD_belatedPNG.fix('.pngfix');</script>
+    <![endif]-->
+	<script type="text/javascript"> 
+		$(document).ready(function(){
+			$('#Recommendation li').soChange({
+				thumbObj:'#sliderNav li',
+				//导航图标，选择器直接指向图标对象
+				botPrev:'#sliderChange .prev',
+				botNext:'#sliderChange .next'
+			});
+            $(".newsList ul li:even").css("background","#E8E8E8");
+            $(".newsList ul li:odd").css("background","#F9F9F9");
+            
+            $(".newsBlue .projectrRsult .contentRsult").hide();
+            $(".newsBlue .projectrRsult h2").click(function(){
+                $(".newsBlue .projectrRsult h2").css("background-color","#F9F9F9");
+                $(".newsBlue .projectrRsult h2").children("span").css("background-position","0 5px");
+                $(".newsBlue .projectrRsult .contentRsult").hide();
+                $(this).css("background-color","#D9D9D9");
+                $(this).children("span").css("background-position","0 -56px");
+                $(this).next().show();
+            });
+			
+			$(".newsGreen .projectrRsult .contentRsult").hide();
+            $(".newsGreen .projectrRsult h2").click(function(){
+                $(".newsGreen .projectrRsult h2").css("background-color","#F9F9F9");
+                $(".newsGreen .projectrRsult h2").children("span").css("background-position","0 -114px");
+                $(".newsGreen .projectrRsult .contentRsult").hide();
+                $(this).css("background-color","#D9D9D9");
+                $(this).children("span").css("background-position","0 -175px");
+                $(this).next().show();
+            });
+            
+            $(".newsBlue .projectrRsult li:first h2").css("background-color","#D9D9D9");
+            $(".newsBlue .projectrRsult li:first h2").children("span").css("background-position","0 -56px");
+            $(".newsBlue .projectrRsult li:first .contentRsult").show();
+			
+			 $(".newsGreen .projectrRsult li:first h2").css("background-color","#D9D9D9");
+            $(".newsGreen .projectrRsult li:first h2").children("span").css("background-position","0 -175px");
+            $(".newsGreen .projectrRsult li:first .contentRsult").show();
+            
+            $(".itemizeBlock ul li:odd").css("background","#F9F9F9");
+            $(".itemizeBlock ul li:even").css("background","#F0F0F0");
+		})
+	</script>
+</head>
+<body>
+    <!-- header start -->
+	<div id="header"> 
+		<div id="header_top"> 
+			<div class="wrap fn-clear"> 
+				<h1><img src="img/logo.png" alt="" class="pngfix" /></h1>
+				<form action="" class="fn-clear"> 
+					<p class="fn-clear"><input type="text"  value="搜索" id="search"/></p>
+					<input type="button"  id="btn"/>
+				</form>
+			</div>
+		</div>
+		<div id="nav"> 
+			<div id="header_nav"> 
+				<ul class="fn-clear wrap"> 
+					<li class="first"><a href="index.html"><img src="img/index.png" alt="设为主页"  class="pngfix"/></a></li>
+					<li class="current">
+						<a href="">企业中心</a>
+						<dl class="fn-clear"> 
+							<dd class="pngfix"><a href="">企业简介1</a></dd>
+							<dd class="pngfix"><a href="">企业文化1</a></dd>
+							<dd class="pngfix"><a href="">荣誉资质1</a></dd>
+							<dd class="pngfix"><a href="">网络营销1</a></dd>
+						</dl>
+					</li>
+					<li>
+						<a href="">新闻中心</a>
+					</li>
+					<li>
+						<a href="">企业博客</a>
+					</li>
+					<li>
+						<a href="">产品中心</a>
+					</li>
+					<li>
+						<a href="">成功案例</a>
+					</li>
+					<li><a href="">售后服务</a></li>
+					<li><a href="">联系我们</a></li>
+				</ul>
+			</div>
+			<div id="subNav">1</div>
+		</div>
+	</div>
+    <!-- header end -->
+	<!-- indexMain start -->
+	<div id="indexMain"> 
+		<!-- sliderArea start -->
+		<div id="sliderArea" class="wrap fn-clear"> 
+			<!-- slider start -->
+			<div id="slider"> 
+				<div id="sliderContent"> 
+					<h2>主要推荐的产品</h2>
+					<ul id="Recommendation"> 
+						<li> 
+							<a href=""><img src="img/slider-img.jpg" style="width:606px; height:84px;" alt="产品1推荐" /></a>
+							<div id="description"> 
+								<dl class="fn-clear"> 
+									<dd>描述描述描述描述</dd>
+									<dd>描述描述描述描述</dd>
+									<dd>描述描述描述描述</dd>
+									<dd>描述描述描述描述</dd>
+									<dd>描述描述描述描述</dd>
+									<dd>描述描述描述描述</dd>
+								</dl>
+							</div>
+						</li>
+						<li> 
+							<a href=""><img src="img/slider-img.jpg" style="width:606px; height:84px;" alt="产品1推荐" /></a>
+							<div id="description"> 
+								<dl class="fn-clear"> 
+									<dd>描述描述描述描述1</dd>
+									<dd>描述描述描述描述1</dd>
+									<dd>描述描述描述描述1</dd>
+									<dd>描述描述描述描述1</dd>
+									<dd>描述描述描述描述1</dd>
+									<dd>描述描述描述描述1</dd>
+								</dl>
+							</div>
+						</li>
+						<li> 
+							<a href=""><img src="img/slider-img.jpg" style="width:606px; height:84px;" alt="产品1推荐" /></a>
+							<div id="description"> 
+								<dl class="fn-clear"> 
+									<dd>描述描述描述描述2</dd>
+									<dd>描述描述描述描述2</dd>
+									<dd>描述描述描述描述2</dd>
+									<dd>描述描述描述描述2</dd>
+									<dd>描述描述描述描述2</dd>
+									<dd>描述描述描述描述2</dd>
+								</dl>
+							</div>
+						</li>
+					</ul>
+					<ul id="sliderNav" class="fn-clear"> 
+						<li class="navWhite">1</li>
+						<li class="navBlack">2</li>
+						<li class="navBlue">3</li>
+					</ul>
+					<div id="sliderChange" class="fn-clear"> 
+						<div class="prev"><img src="img/prev.gif" alt="" /></div>
+						<div class="next"><img src="img/next.gif" alt="" /></div>
+					</div>
+				</div>
+			</div>
+			<!-- slider end -->
+			<!-- inforArea start -->
+			<div id="inforArea" class="fn-left"> 
+				<div id="corporateBlog"> 
+                    <h3><a href="">理工学院实验室设备采购项目结果</a></h3>
+                    <a href="">投标人能够独立承担民事责任的能力，在中华人民共和国境内登记注册的具有独立法人资格的单位凡两家或以上供应商参加同...[详细]</a>
+				</div>
+                <div class="fn-clear"> 
+                    <div id="photo"> 
+                        <a href=""><img src="img/photo.gif" style="width:147px; height:147px;" alt="公司照片" /></a>
+                    </div>
+                    <div id="phone"> 
+                        <a href="" class="contactUs"> 
+                            <h3>咨询热线：</h3>
+                            <p>021-55884001</p>
+                        </a>
+                        <a href=""> 
+                            <h3>售后热线：</h3>
+                            <p>021-55884001</p>
+                        </a>
+                    </div>
+                </div>
+			</div>
+            <!-- inforArea end -->
+		</div>
+		<!-- sliderArea end -->
+        <!-- banner start -->
+        <div class="banner bannerGray"> 
+            <div class="wrap fn-clear"> 
+                <div class="bannerInfor"> 
+                    <h2>电控悬架</h2>
+                    <p>指针式仪表检测工作气压变化,数字仪表显示各高度传感器工作电压变化.....</p>
+                    <a href="">查 看 详 情</a>
+                </div>
+                <div class="bannerProduct"> 
+                    <img src="img/banner-product.png" class="pngfix" alt="产品广告图" />
+                </div>
+            </div>
+        </div>
+        <!-- banner end -->
+        <!-- companyArea start -->
+        <div class="companyArea wrap fn-clear newsBlue"> 
+            <div class="newsLink fn-clear"> 
+                <div class="linkArea"> 
+                    <a href="" class="technology"><span>技术</span></a>
+                    <a href="" class="price"><span>行情</span></a>
+                </div>
+                <div class="result"> 
+                    <a href="" class="blueResult resultBlock"><span>理工学院实验室设备采购项目结果</span></a>
+                    <div class="fn-clear productLink"> 
+                        <a href=""><img src="img/productLink.jpg" alt="" /></a>
+                        <a href="" class="last"><img src="img/productLink.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="newsList"> 
+                <h2 class="fn-clear"> 
+                    <span class="pngfix">公司新闻</span>
+                    <a href="">更多>></a>
+                </h2>
+                <ul> 
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                </ul>
+            </div>
+            <div class="projectrRsult"> 
+                <ul> 
+                    <li> 
+                        <h2><span>理工学院实验室设备采购项目结果</span></h2>
+                        <div class="contentRsult"> 
+                            <p>投标人能够独立承担民事责任的能力，在中华人民共和国境内登记注册的具有独立法人资格的单位凡两家或以上供应商参加同... <a href="">[详细]</a></p>
+                        </div>
+                    </li>
+                    <li> 
+                        <h2><span>理工学院实验室设备采购项目结果</span></h2>
+                        <div class="contentRsult"> 
+                            <p>投标人能够独立承担民事责任的能力，在中华人民共和国境内登记注册的具有独立法人资格的单位凡两家或以上供应商参加同... <a href="">[详细]</a></p>
+                        </div>
+                    </li>
+                    <li> 
+                        <h2><span>理工学院实验室设备采购项目结果</span></h2>
+                        <div class="contentRsult"> 
+                            <p>投标人能够独立承担民事责任的能力，在中华人民共和国境内登记注册的具有独立法人资格的单位凡两家或以上供应商参加同... <a href="">[详细]</a></p>
+                        </div>
+                    </li>
+                    <li> 
+                        <h2><span>理工学院实验室设备采购项目结果</span></h2>
+                        <div class="contentRsult"> 
+                            <p>投标人能够独立承担民事责任的能力，在中华人民共和国境内登记注册的具有独立法人资格的单位凡两家或以上供应商参加同... <a href="">[详细]</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- companyArea end -->
+        <!-- itemize start -->
+        <div class="itemize blueItemize fn-clear wrap"> 
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock last"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock last"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+        </div>
+		<!-- itemize end -->
+		<!-- banner start -->
+        <div class="banner bannerGreen"> 
+            <div class="wrap fn-clear"> 
+                <div class="bannerInfor"> 
+                    <h2>电控悬架</h2>
+                    <p>指针式仪表检测工作气压变化,数字仪表显示各高度传感器工作电压变化.....</p>
+                    <a href="">查 看 详 情</a>
+                </div>
+                <div class="bannerProduct"> 
+                    <img src="img/banner-product.png" class="pngfix" alt="产品广告图" />
+                </div>
+            </div>
+        </div>
+        <!-- banner end -->
+		<!-- companyArea start -->
+        <div class="companyArea wrap fn-clear newsGreen"> 
+            <div class="newsLink fn-clear"> 
+                <div class="linkArea"> 
+                    <a href="" class="technology"><span>技术</span></a>
+                    <a href="" class="price"><span>行情</span></a>
+                </div>
+                <div class="result"> 
+                    <a href="" class="greenResult resultBlock"><span>理工学院实验室设备采购项目结果</span></a>
+                    <div class="fn-clear productLink"> 
+                        <a href=""><img src="img/productLink.jpg" alt="" /></a>
+                        <a href="" class="last"><img src="img/productLink.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="newsList"> 
+                <h2 class="fn-clear"> 
+                    <span class="pngfix">公司新闻</span>
+                    <a href="">更多>></a>
+                </h2>
+                <ul> 
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                    <li><a href=""><span>语音提示十四经穴针灸电动模型</span></a></li>
+                </ul>
+            </div>
+            <div class="projectrRsult"> 
+                <ul> 
+                    <li> 
+                        <h2><span class="pngfix">理工学院实验室设备采购项目结果</span></h2>
+                        <div class="contentRsult"> 
+                            <p>投标人能够独立承担民事责任的能力，在中华人民共和国境内登记注册的具有独立法人资格的单位凡两家或以上供应商参加同... <a href="">[详细]</a></p>
+                        </div>
+                    </li>
+                    <li> 
+                        <h2><span class="pngfix">理工学院实验室设备采购项目结果</span></h2>
+                        <div class="contentRsult"> 
+                            <p>投标人能够独立承担民事责任的能力，在中华人民共和国境内登记注册的具有独立法人资格的单位凡两家或以上供应商参加同... <a href="">[详细]</a></p>
+                        </div>
+                    </li>
+                    <li> 
+                        <h2><span class="pngfix">理工学院实验室设备采购项目结果</span></h2>
+                        <div class="contentRsult"> 
+                            <p>投标人能够独立承担民事责任的能力，在中华人民共和国境内登记注册的具有独立法人资格的单位凡两家或以上供应商参加同... <a href="">[详细]</a></p>
+                        </div>
+                    </li>
+                    <li> 
+                        <h2><span class="pngfix">理工学院实验室设备采购项目结果</span></h2>
+                        <div class="contentRsult"> 
+                            <p>投标人能够独立承担民事责任的能力，在中华人民共和国境内登记注册的具有独立法人资格的单位凡两家或以上供应商参加同... <a href="">[详细]</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- companyArea end -->
+        <!-- displayArea start -->
+        <div id="displayArea" class="fn-clear wrap"> 
+            <div id="displayLink"> 
+                <a href="" id="newProducts"><span>最新产品</span></a>
+                <div class="fn-clear" id="succeedCase"> 
+                    <a href=""><span>成功<br />案例</span></a>
+                    <a href="" class="more"><span>查看更多</span></a>
+                </div>
+            </div>
+            <ul class="fn-clear"> 
+                <li>
+                    <a href=""><img src="img/displayArea-img.jpg" style="width:149px; height:115px;" alt="" /></a>
+                    <a href="" class="title">理工学院实验室</a>
+                </li>
+                <li>
+                    <a href=""><img src="img/displayArea-img.jpg" style="width:149px; height:115px;" alt="" /></a>
+                    <a href="" class="title">理工学院实验室</a>
+                </li>
+                <li>
+                    <a href=""><img src="img/displayArea-img.jpg" style="width:149px; height:115px;" alt="" /></a>
+                    <a href="" class="title">理工学院实验室</a>
+                </li>
+                <li>
+                    <a href=""><img src="img/displayArea-img.jpg" style="width:149px; height:115px;" alt="" /></a>
+                    <a href="" class="title">理工学院实验室</a>
+                </li>
+                <li class="last">
+                    <a href=""><img src="img/displayArea-img.jpg" style="width:149px; height:115px;" alt="" /></a>
+                    <a href="" class="title">理工学院实验室</a>
+                </li>
+            
+            </ul>
+        
+        </div>
+        <!-- displayArea end -->
+		<!-- itemize start -->
+        <div class="itemize greenItemize fn-clear wrap"> 
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock last"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+            <div class="itemizeBlock last"> 
+                <h2><a href="">高教职教实验室</a></h2>
+                <ul> 
+                    <li><a href="">自主神经电动模型自主神经电动模型自主神经电动模型自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                    <li><a href="">自主神经电动模型</a></li>
+                </ul>
+            </div>
+        </div>
+		<!-- itemize end -->
+	</div>
+	<!-- indexMain end -->
+	<!-- bottomNav start -->
+    <div id="bottomNav"> 
+        <div class="wrap"> 
+            <a href="">新闻中心</a>
+            <a href="">企业博客</a>
+            <a href="">企业中心</a>
+            <a href="">产品中心</a>
+            <a href="">成功案例</a>
+            <a href="">售后服务</a>
+            <a href="">联系我们</a>
+            <a href="">网站地图</a>
+            <a href="" class="last">RSS订阅</a>
+        </div>
+    </div>
+    <!-- bottomNav end -->
+    <!-- footer start -->
+    <div id="footer"> 
+        <div class="wrap"> 
+            <div id="friendLink"> 
+                <a href="">友情链接</a>
+                <a href="">友情链接</a>
+                <a href="">友情链接</a>
+                <a href="">友情链接</a>
+                <a href="">友情链接</a>
+                <a href="">友情链接</a>
+            </div>
+        </div>
+        <p>2013, 上海天威教学仪器设备有限公司 © by Ruidon | 沪ICP备：3454544-5号</p>
+    </div>
+    <!-- footer end -->
+</body>
+</html>
